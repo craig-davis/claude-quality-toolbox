@@ -48,7 +48,7 @@ Please knoll the auth service before we hand it off to the new team.
 
 ### `/image-enhancer` — Image Quality
 
-Improves screenshots and images for documentation, blog posts, presentations, and social media. Analyzes the current image and applies targeted enhancements: upscaling, sharpness, artifact reduction, and output optimization.
+Enhances images using ImageMagick (`magick` CLI). Covers sharpening, noise reduction, format conversion, resizing, and compression artifact reduction. Requires ImageMagick (`brew install imagemagick`).
 
 **Invoke it:**
 
@@ -57,17 +57,17 @@ Improves screenshots and images for documentation, blog posts, presentations, an
 ```
 
 ```
-Improve the image quality of screenshot.png
+Sharpen screenshot.png and save without overwriting the original
 ```
 
 ```
-Upscale this screenshot for use in a retina presentation deck
+Reduce JPEG artifacts in this image and convert to WebP
 ```
 
 **Works well for:**
 - UI screenshots heading into documentation
-- Blog post images that need a professional finish
-- Low-resolution photos before sharing
+- Reducing compression artifacts on exported images
+- Batch converting or resizing a folder of assets
 
 ---
 
